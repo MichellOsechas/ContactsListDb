@@ -1,0 +1,192 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 4rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-image: url(fondo.jpg);
+    backdrop-filter: blur(2px);
+    opacity: 90%;
+    overflow-y:hidden;
+}
+.helper-form {
+    display: none;
+}
+  
+#cerrar-btn{
+    width: 3rem;
+    height: 2.6rem;
+    color: rgb(190, 7, 7);
+    right: 0;
+    display: flex;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.edit-icon, .delete-icon {
+    width: 2rem;
+    height: 2rem;
+}
+.delete-icon {
+    color: rgb(190, 7, 7);
+    cursor: pointer;
+
+}
+.edit-icon {
+    color: rgb(0, 0, 0);
+}
+.check-icon {
+    width: 2rem;
+    height: 2rem;
+    color: rgb(1, 78, 1);
+}
+.edit-btn {
+    background-color: rgb(206, 160, 218);
+    border: 0;
+    cursor: pointer;
+
+}
+.edit-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+  
+.edit-btn:hover:disabled {
+    color: #22c55e;
+}
+
+input {
+    outline: none;
+    border-radius: 0.3rem;
+    height: 1.2rem;
+    width: 8rem;
+    border: 0;
+    background-color: rgb(206, 160, 218);
+    margin-left: 1rem;
+    padding: 0.1rem;
+    font-size: 1.2rem;
+}
+.check {
+    display: none;    
+}
+
+#name-input, #phone-input {
+    background-color: rgb(243, 231, 246);
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.25rem
+}
+.modif {
+    background-color: rgb(243, 231, 246);
+}
+  
+.correct {
+    border: 2px solid rgb(117, 199, 117);
+}
+  
+.error {
+    border: 2px solid rgb(248, 107, 107);
+}
+  
+.show {
+    display: block;
+}
+
+#form {
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(206, 160, 218);
+    padding: 10px;
+    width: 18rem;    
+    text-align: center;
+    height: fit-content;       
+}
+.helper-form {
+    font-size: 0.8rem;
+    color: rgb(253, 75, 75);
+}
+
+#icon-title {
+    display: inline;
+    border: solid 0.1rem;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+i {
+    width: 1.1rem;
+    height: 1.1rem;
+    border: solid 0.1rem;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.titulo{
+    margin-top: 1rem;
+}
+
+.input-container {
+    margin-bottom: 0.3rem;
+    margin-top: 1rem
+}
+#form-btn {
+    border: solid 0.1rem white;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem
+}
+
+#list {
+    overflow-y:scroll;
+    box-shadow: 2px 2px 10px black;
+    background-color: rgb(215, 191, 221);
+    max-height: 40%;
+    width: 95%;
+    padding: 0;
+}
+.list-item {
+    background-color: rgb(206, 160, 218);
+    margin: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    #list {
+        width: 75%;
+    }
+    .list-item {
+        display: flex;
+    }
+    input {
+        width: 12rem;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 1024px) {
+    #list {
+        width: 50%;
+    }
+    .list-item {
+        display: flex;
+    }
+    #form {
+        width: 28rem;    
+    }
+    input {
+        width: 12rem;
+    }
+}
+    
