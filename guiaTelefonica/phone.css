@@ -142,7 +142,7 @@ i {
     overflow-y:scroll;
     box-shadow: 2px 2px 10px black;
     background-color: rgb(215, 191, 221);
-    max-height: 40%;
+    max-height: 30%;
     width: 95%;
     padding: 0;
 }
@@ -177,16 +177,13 @@ li {
 }
 @media (min-width: 1024px) {
     #list {
-        width: 50%;
+        width: 60%;
     }
     .list-item {
         display: flex;
     }
     #form {
         width: 28rem;    
-    }
-    input {
-        width: 12rem;
     }
 }
     
